@@ -1,0 +1,113 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+.hide {
+    display: none!important;
+}
+div#main {
+    width: 600px;
+    margin: auto;
+    margin-top: 100px;   
+}
+/* CABEÇALHO */
+div#cabecalho {
+    margin: 0px 5px 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div#hora {
+    background-color: gray;
+    color: yellowgreen;
+    padding: 3px;
+    border-radius: 5px;
+}
+/* LISTA DE TAREFAS */
+div#listaTarefa {       
+    background-color: yellowgreen;    
+    padding: 10px;   
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;   
+}
+div.tarefa {    
+    display: flex; 
+    gap: 5px;
+    height: 30px; 
+    margin-bottom: 5px;      
+}
+p {    
+    background-color: white;
+    text-align: center;
+    width: 80%;    
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    font-style: oblique;
+}
+div#div_icones {  
+    display: flex;  
+    gap: 5px;       
+    width: 20%;    
+}
+i {    
+    background-color: white;
+    text-align: center;
+    padding: 6px;
+    width: 33%;
+    height: 100%;  
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+/* TAREFA COMPLETA */
+.feito {
+    background-color: gray;
+    color: white;
+}
+.pFeito {
+    background-color: gray;
+    color: white;
+    text-decoration: line-through;
+}
+/* BOTÕES */
+div#div_botao {
+    text-align: center;
+}
+button {    
+    color: white; 
+    width: 200px;
+    margin-top: 10px;
+    padding: 5px;       
+    background-color: blueviolet;  
+    cursor: pointer;  
+    border-radius: 5px;
+}
+.janela {
+    text-align: center;
+    width: 500px; 
+    background-color: yellowgreen; 
+    padding: 10px;   
+    margin-top: 50px;
+    border-radius: 10px;    
+}
+input {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.alarmetocando {
+    background-color: red;
+    color: white;
+}
+div#tempo_alarme {
+    background-color: white;
+    text-align: center;      
+    padding: 5px;
+    border-radius: 5px;
+}
