@@ -90,6 +90,11 @@ const criarTarefa=(tarefa)=> {
     indice++
 }
 
+btn_novaTarefa.addEventListener("click",()=> {
+    novaTarefa.classList.toggle("hide")
+    nomeTarefa.focus()
+})
+
 btn_addTarefa.addEventListener("click",()=> {
     if(nomeTarefa.value==""){
         alert("Por Favor! Digite um nome para sua Tarefa!")
@@ -100,13 +105,8 @@ btn_addTarefa.addEventListener("click",()=> {
     }
 })
 
-btn_novaTarefa.addEventListener("click",()=> {
-    novaTarefa.classList.toggle("hide")
-    nomeTarefa.focus()
-})
-
 btn_cancelarTarefa.addEventListener("click",()=> {
-    novaTarefa.setAttribute("style","display: none")
+    novaTarefa.classList.toggle("hide")
     nomeTarefa.value=""
 })
 
