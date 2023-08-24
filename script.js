@@ -112,6 +112,7 @@ btn_cancelarTarefa.addEventListener("click",()=> {
 
 document.addEventListener("click",(e)=> {
     let elemento=e.target
+    let blabla=0
     let elementoP=elemento.parentNode.previousElementSibling    
     let elementoDivPai=elementoP.parentNode
     let tituloTarefa
