@@ -9,6 +9,7 @@ const btn_novaTarefa=document.querySelector('#btn_novaTarefa')
 const btn_confirmarEditTarefa=document.querySelector('#btn_confirmarEditTarefa')
 const btn_cancelarEditTarefa=document.querySelector('#btn_cancelarEditTarefa')
 
+const div_data=document.querySelector('#data')
 const div_relogio=document.querySelector('#hora')
 const div_alarme=document.querySelector('#div_alarme')
 const hora_alarme=document.querySelector('#hora_alarme')
@@ -16,6 +17,10 @@ const tempo_alarme=document.querySelector('#tempo_alarme')
 const btn_ativar=document.querySelector('#btn_ativar')
 const btn_parar=document.querySelector('#btn_parar')
 const som_alarme= new Audio("#"); som_alarme.loop=-1;
+
+const data=new Date()
+div_data.innerHTML=data.toLocaleDateString()
+
 let testeAlarme
 let tempoAtual
 let tempoAlarme
@@ -45,8 +50,8 @@ btn_ativar.addEventListener("click",(e)=> {
     }    
 })
 
-const relogio=()=> {
-    const data=new Date()
+const relogio=()=> { 
+    const data=new Date()  
     div_relogio.innerHTML=data.toLocaleTimeString()
 }
 
